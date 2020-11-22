@@ -59,7 +59,7 @@
 								<div class="input-group-prepend">
 								  <span class="input-group-text"><i class="tim-icons icon-caps-small"></i></span>
 								</div>
-								<input type="text" class="form-control" placeholder="Kliknutím vyberte" aria-label="Last Name...">
+								<input type="text" class="form-control" placeholder="V deme nefunkčné" aria-label="Last Name..." disabled>
 							  </div>
 							</div>
 						  </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-22 09:32:58
+/* Smarty version 3.1.34-dev-7, created on 2020-11-22 16:24:47
   from '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fba304a47cb16_91219347',
+  'unifunc' => 'content_5fba90cfc6fe59_32424820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f49ec83dfe5623eea854864634dc46b25b7c3582' => 
     array (
       0 => '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/header.tpl',
-      1 => 1606037577,
+      1 => 1606062287,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fba304a47cb16_91219347 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba90cfc6fe59_32424820 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -65,6 +65,9 @@ function content_5fba304a47cb16_91219347 (Smarty_Internal_Template $_smarty_tpl)
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="../../use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <?php echo '<script'; ?>
+ src="https://kit.fontawesome.com/8fe68ee7cd.js" crossorigin="anonymous"><?php echo '</script'; ?>
+>
   <!-- Nucleo Icons -->
   <link href="../../custom/templates/default/assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
@@ -144,7 +147,6 @@ function content_5fba304a47cb16_91219347 (Smarty_Internal_Template $_smarty_tpl)
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
-              <i class="tim-icons icon-book-bookmark" aria-hidden="true"></i>
               <p>Profil</p>
             </a>
               <?php echo $_smarty_tpl->tpl_vars['navbarprofile']->value;?>

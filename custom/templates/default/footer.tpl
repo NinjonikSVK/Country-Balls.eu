@@ -1,36 +1,11 @@
 <footer class="footer footer-simple">
             <div class="container">
-              <nav>
-                <ul>
-                  <li>
-                    <a href="https://www.creative-tim.com/" class="nav-link">
-                      Creative Tim
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://presentation.creative-tim.com/" class="nav-link">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://blog.creative-tim.com/" class="nav-link">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.creative-tim.com/license" target="_blank" class="nav-link">
-                      License
-                    </a>
-                  </li>
-                </ul>
-              </nav>
               <div class="copyright">
-                &copy;
+                &copy; 2020-
                 <script>
                   document.write(new Date().getFullYear())
                 </script>, Designed by
-                <a href="http://www.invisionapp.com/" target="_blank" class="copyright-link">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com/" target="_blank" class="copyright-link">Creative Tim</a>.
+                <a href="https://www.creative-tim.com/" target="_blank" class="copyright-link">Creative Tim</a>. Coded by <a href="https://nntworks.fun">NNT Works</a>.
               </div>
             </div>
           </footer>

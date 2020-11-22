@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-22 07:56:24
+/* Smarty version 3.1.34-dev-7, created on 2020-11-22 16:12:32
   from '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/addimg.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fba19a841c413_56239203',
+  'unifunc' => 'content_5fba8df07f38d9_04621407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7307478c0f6d073553bee4acc4422d5c5a44949a' => 
     array (
       0 => '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/addimg.tpl',
-      1 => 1606031564,
+      1 => 1606061550,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5fba19a841c413_56239203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba8df07f38d9_04621407 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="wrapper">
@@ -85,7 +85,7 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
 								<div class="input-group-prepend">
 								  <span class="input-group-text"><i class="tim-icons icon-caps-small"></i></span>
 								</div>
-								<input type="text" class="form-control" placeholder="Kliknutím vyberte" aria-label="Last Name...">
+								<input type="text" class="form-control" placeholder="V deme nefunkčné" aria-label="Last Name..." disabled>
 							  </div>
 							</div>
 						  </div>

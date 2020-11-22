@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-22 07:40:20
+/* Smarty version 3.1.34-dev-7, created on 2020-11-22 16:10:20
   from '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fba15e4216ab7_10495409',
+  'unifunc' => 'content_5fba8d6c7a6f62_12986021',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8aa78c6b38b7af0cc57523e917d1f82d65d55194' => 
     array (
       0 => '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/footer.tpl',
-      1 => 1606030820,
+      1 => 1606061420,
       2 => 'file',
     ),
   ),
@@ -20,42 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fba15e4216ab7_10495409 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fba8d6c7a6f62_12986021 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer class="footer footer-simple">
             <div class="container">
-              <nav>
-                <ul>
-                  <li>
-                    <a href="https://www.creative-tim.com/" class="nav-link">
-                      Creative Tim
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://presentation.creative-tim.com/" class="nav-link">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://blog.creative-tim.com/" class="nav-link">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.creative-tim.com/license" target="_blank" class="nav-link">
-                      License
-                    </a>
-                  </li>
-                </ul>
-              </nav>
               <div class="copyright">
-                &copy;
+                &copy; 2020-
                 <?php echo '<script'; ?>
 >
                   document.write(new Date().getFullYear())
                 <?php echo '</script'; ?>
 >, Designed by
-                <a href="http://www.invisionapp.com/" target="_blank" class="copyright-link">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com/" target="_blank" class="copyright-link">Creative Tim</a>.
+                <a href="https://www.creative-tim.com/" target="_blank" class="copyright-link">Creative Tim</a>. Coded by <a href="https://nntworks.fun">NNT Works</a>.
               </div>
             </div>
           </footer>

@@ -41,6 +41,7 @@
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="../../use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8fe68ee7cd.js" crossorigin="anonymous"></script>
   <!-- Nucleo Icons -->
   <link href="../../custom/templates/default/assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
@@ -116,7 +117,6 @@
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
-              <i class="tim-icons icon-book-bookmark" aria-hidden="true"></i>
               <p>Profil</p>
             </a>
               {$navbarprofile}
