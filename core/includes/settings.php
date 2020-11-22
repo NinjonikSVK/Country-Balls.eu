@@ -2,7 +2,7 @@
                                     <?php
                                     define("DBHOST", "innodb.endora.cz");
                                     define("DBUSER", "countryballseu");
-                                    define("DBPASS", "%#pupzB7^,uJgFmE(S6Jj^V$*%R>PE5$");
+                                    define("DBPASS", "to_by_si_chcel_vediet_co?");
                                     define("DBNAME", "countryballseu");
 
                                     //application address
