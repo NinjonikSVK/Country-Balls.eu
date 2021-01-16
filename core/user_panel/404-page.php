@@ -1,6 +1,6 @@
 <?php 
 
-	require_once("../includes/config.php");
+	require_once("hdr.php");
 
 	$smarty->display("404.tpl");
 

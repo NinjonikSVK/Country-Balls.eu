@@ -1,6 +1,6 @@
 <?php
 
-	require_once("../includes/config.php");
+	require_once("hdr.php");
 
 	$id = htmlspecialchars($_GET["id"]);
 
@@ -8,7 +8,7 @@
  		switch($_GET["action"]) {
 			case "likent":
 				if(!$user->is_logged_in() ){
-					header('Location: login');
+					header("Location: login?action=needlogin");
 				} else {
 					$stmtr = $db->prepare('SELECT imgID, type FROM likent WHERE likeAID=:likeAID AND imgID=:imgID');
 					$stmtr->execute(array(':likeAID' => $_SESSION['memberID'], ':imgID' => $id));

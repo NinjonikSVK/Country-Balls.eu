@@ -1,0 +1,4 @@
+ErrorDocument 404 /core/user_panel/404-page.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

@@ -1,6 +1,6 @@
 <?php
 
-require_once("../includes/config.php");
+require_once("hdr.php");
 
 if(empty($_GET["type"])){
 	header("Location: index?action=invalidsubmittype");
@@ -23,10 +23,10 @@ if (isset($_POST['submit'])) {
 	$ext = end((explode(".", $name))); # extra () to prevent notice
 
 	if (in_array($ext, array('png', 'jpg', 'gif', 'jpeg'))) {
-		
+
 		$fileUploader = $_SESSION["username"];
 		$fileuplpath = "../../uploads/";
-		
+
 		$temp = explode(".", $_FILES["file"]["name"]);
 		$newfilename = round(microtime(true)) . '.' . end($temp);
 		move_uploaded_file($_FILES["file"]["tmp_name"], "".$fileuplpath."/" . $newfilename);
@@ -46,22 +46,22 @@ if (isset($_POST['submit'])) {
 			  flush();
 			  readfile($file);
 			}
-				
+
 				$file = $_FILES['file']['name'];
-				
+
 				$stmt = $db->prepare('INSERT INTO img (date,fileName,added,type,`desc`,label,title) VALUES (:date, :fileName, :added, :type, :desc, :label, :title)');
 				$stmt->execute(array(
 						':date' => time(),
 						':fileName' => $newfilename,
-						':added' => $_SESSION['username'],
+						':added' => $_SESSION['memberID'],
 						':type' => $_GET['type'],
 						':desc' => $_POST['desc'],
 						':label' => 'nullednot',
 						':title' => $_POST['title']
 				));
-						
+
 				echo '3';
-						
+
 				header("Location: index?action=fileuploaded&fileid=".$db->lastInsertId()."");
 	} else {
 		header("Location: addimg?type=".$_GET['type']."&action=unsupfiletype&filetype=".$ext."");

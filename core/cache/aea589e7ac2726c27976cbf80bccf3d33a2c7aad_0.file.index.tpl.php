@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-22 16:08:58
+/* Smarty version 3.1.34-dev-7, created on 2021-01-16 08:29:12
   from '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fba8d1a965023_55706154',
+  'unifunc' => 'content_6002a3d89083e8_73695369',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aea589e7ac2726c27976cbf80bccf3d33a2c7aad' => 
     array (
       0 => '/home/users/megaparba9ecz/country-balls.eu/web/custom/templates/default/index.tpl',
-      1 => 1606061338,
+      1 => 1610785748,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5fba8d1a965023_55706154 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6002a3d89083e8_73695369 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/home/users/megaparba9ecz/country-balls.eu/web/core/libs/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -71,7 +71,7 @@ $_smarty_tpl->tpl_vars['imgtop2']->do_else = false;
                 <div class="card-footer">
                   <div class="author">
                     <img src="../../custom/templates/default/assets/img/p10.jpg" alt="..." class="avatar img-raised">
-                    <span><?php echo $_smarty_tpl->tpl_vars['imgtop2']->value["added"];?>
+                    <span><?php echo $_smarty_tpl->tpl_vars['imgtop2']->value["username"];?>
 </span>
                   </div>
                   <div class="stats stats-right">

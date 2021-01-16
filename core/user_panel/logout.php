@@ -1,9 +1,13 @@
-<?php require_once("../includes/config.php");
+<?php require_once("hdr.php");
 
 //logout
 $user->logout();
 
-//logged in return to index page
-header('Location: index');
+if(!empty($_GET["route"])){
+  header('Location: '.htmlspecialchars($_GET["route"]).'');
+} else {
+  header('Location: index?action=loggedout');
+}
+
 exit;
 ?>

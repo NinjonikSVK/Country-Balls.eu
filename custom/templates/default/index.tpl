@@ -35,7 +35,7 @@
                 <div class="card-footer">
                   <div class="author">
                     <img src="../../custom/templates/default/assets/img/p10.jpg" alt="..." class="avatar img-raised">
-                    <span>{$imgtop2["added"]}</span>
+                    <span>{$imgtop2["username"]}</span>
                   </div>
                   <div class="stats stats-right">
                     <i class="tim-icons icon-watch-time"></i> {$imgtop2["date"]|date_format}

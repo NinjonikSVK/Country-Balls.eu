@@ -37,51 +37,27 @@ require_once('functions.php');
 // Smarty template engine
 require_once("../libs/smarty/libs/Smarty.class.php");
 
+// API.php
+require_once("api.php");
+
 $smarty = new Smarty();
-$smarty->template_dir = '../../custom/templates/default/';
+
+if($sstatus == 0){
+	$smarty->template_dir = '../../custom/templates/default/';
+} else if ($sstatus == 1) {
+	$smarty->template_dir = '../../custom/panel_templates/default/';
+} else {
+	echo 'Error Detected: Unreachable template folder';
+}
+
 $smarty->compile_dir = '../cache/';
 
 $sitetitle = "Country-Balls.eu";
 $smarty->assign("sitetitle", $sitetitle);
 $smarty->assign("username", $_SESSION['username']);
 
-// NAVBAR
+// GET USER INFORMATION
 
-if(!$user->is_logged_in()){
-	$navbarprofile = '
-
-		 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-		 <a class="dropdown-item" href="login.php">
-			Prihlásiť sa
-		  </a>
-		  <a class="dropdown-item" href="register.php">
-			Zaregistrovať sa
-		  </a>
-		  <a class="dropdown-item" href="reset.php">
-			Reset hesla
-		  </a>
-		</div>
-
-	';
-} else {
-	$navbarprofile = '
-
-		 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-		 <a class="dropdown-item" href="profile.php">
-			Profil
-		  </a>
-		  <a class="dropdown-item" href="editprofile.php">
-			Upraviť profil
-		  </a>
-		  <a class="dropdown-item" href="logout.php">
-			Odhlásiť sa
-		  </a>
-		</div>
-
-	';
-}
-
-$smarty->assign("navbarprofile", $navbarprofile);
 
 // LANGUAGE
 
@@ -121,6 +97,6 @@ switch ($lang) {
 include_once 'languages/'.$lang_file;
 
 // Errory
-		
+
 require_once("errors.php");
 ?>
